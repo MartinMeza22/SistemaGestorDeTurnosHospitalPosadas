@@ -7,38 +7,62 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../styles/mainStyle.css">
+
+
+  <link rel="stylesheet" href="../styles/reservarFacundo.css">
+  <link rel="stylesheet" href="../styles/mainStyle.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/navFacundo.css">
 </head>
 <body>
 
 <!-- Header -->
-<header>
-  <div class="w3-half">
-    <img src="../images/isologotipo.png" alt="Isologotipo">
-    <h1 class= "w3-hide-small w3-hide-medium">Hospital Nacional Profesor Alejandro Posadas</h1>
+
+<!-- Nav Bar -->
+<nav class="w3-bar w3-card-4">
+  <!-- Left side: Logo and text -->
+  <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+    <img src="../../PRUEBA_FACUNDO/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    <span style="font-size: x-large" class="w3-hide-small">Hospital Nacional Profesor Alejandro Posadas</span>
   </div>
 
-  <div class="w3-half">
-    <p>
-      <i class="fa fa-user w3-margin-right"></i>Nadal, Franco
-    </p>
+  <!-- Right side: Registrarse -->
+  <div class="w3-btn w3-hover-none w3-right color-button w3-hide-small w3-hide-medium navLetrasBlancas" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+    <i class="fa fa-user"></i> &nbsp; Nadal, Franco Quispe
+
   </div>
-</header>
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-text-white" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Nadal, Franco Quispe</a>
+    <a href="./reserveShiftView.html" onclick="w3_close()" class="w3-bar-item w3-button">RESERVAR TURNO</a>
+    <a href="nextsShiftsView.html" onclick="w3_close()" class="w3-bar-item w3-button">PRÓXIMOS TURNOS</a>
+    <a href="./turnosAterioresFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS ANTERIORES</a>
+    <a href="../../PRUEBA_FACUNDO/indexFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">CERRAR SESIÓN</a>
+  </nav>
+
+</nav>
 
 <div class="content">
   <div class="w3-box w3-card-4">
     <h2 class="h2">Hola Franco, ¿cómo podemos ayudarte?</h2>
     <button class="w3-button-custom w3-margin-top" style="display: flex; align-items: center; justify-content: center;">
       <i class="fa fa-calendar-plus-o fa-fw "style=" margin-right: 17px;"></i>
-      <a href="reserveView2.html" >Reserva Turno</a>
+      <a href="./reserveShiftView.html" >Reserva Turno</a>
     </button>
     <button class="w3-button-custom w3-margin-top" style="display: flex; align-items: center; justify-content: center;">
       <i class="fa fa-calendar-check-o fa-fw"  style=" margin-right: 10px;"></i>
-      <a href="./nextsShifts.html">Proximos Turnos</a>
+      <a href="./nextsShiftsView.html">Proximos Turnos</a>
     </button>
     <button class="w3-button-custom w3-margin-top" style="display: flex; align-items: center; justify-content: center;">
       <i class="fa fa-history" style="width: 20px; margin-right: 3px;"></i>
-      <a href="./previouShifts.html">Historial de Turnos</a>
+      <a href="previouShifts.html">Turnos Anteriores</a>
     </button>
   </div>
 </div>
@@ -48,20 +72,51 @@
 <footer>
   <!-- Texto e íconos -->
   <div class="footer-left">
-    <h2>CÓMO LLEGAR</h2>
-    <p><i>&#x1F4CD;</i> Florencio Varela 1903 (B1754JEC)</p>
-    <p><i>&#x1F4CD;</i> San Justo, Buenos Aires, Argentina</p>
-    <p><i>&#x260E;</i> (+54 11) 4480-8900</p>
+    <h2>¿CÓMO LLEGAR?</h2>
+    <p><i class="fa-solid fa-location-dot"></i> Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386 (B1684) </p>
+    <p><i class="fa-solid fa-location-dot"></i>El Palomar, Provincia de Buenos Aires, Argentina</p>
+    <p><i class="fa-solid fa-phone"></i> (+54 11) 4469-9300</p>
   </div>
 
   <!-- Mapa -->
   <div class="footer-map">
     <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345097466!2d-122.41941508468172!3d37.77492977975995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581527d5df4a7%3A0x55c55c8a5cddfe78!2sSan%20Francisco%2C%20CA%2C%20EE.%20UU.!5e0!3m2!1ses!2s!4v1636822951942!5m2!1ses!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.1234567890123!2d-58.5781619!3d-34.6300078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb80b7396b9af%3A0xef2dc611cc3efabb!2sHospital+Nacional+Profesor+Alejandro+Posadas!5e0!3m2!1ses!2s!4v1636822951942"
             allowfullscreen="" loading="lazy">
     </iframe>
   </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright">
+    © Hospital Posadas 2024 v2.1.0. Todos los derechos reservados
+  </div>
 </footer>
 
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+  }
+  </script>
 </body>
 </html>

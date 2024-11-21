@@ -1,7 +1,9 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 body {
     background-color: #ddd;
+    min-height: 100vh;
 }
+
 input[type=text], select, input[type=date] {
     width: 100%;
     padding: 10px 15px;
@@ -44,7 +46,7 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
     text-decoration: none !important;
     cursor: pointer;
   }
-  
+
 
     footer {
         display: flex;
@@ -52,7 +54,9 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        background-color: #154564; /* Fondo negro */
+        background-color: #154564;
+        color: white;
+
     }
 
     .footer-left {
@@ -61,21 +65,24 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
     }
 
     .footer-left h2 {
-        font-size: 1.5em;
+        font-size: 2em;
+        margin-top: 0;
         margin-bottom: 20px;
     }
 
     .footer-left p {
-        margin: 10px 0;
+        margin: 25px 0;
         display: flex;
         align-items: center;
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .footer-left p i {
         margin-right: 10px;
-        color: #1c98ed; /* Color azul para los íconos */
+        font-size: 20px;
+        color: black; /* Color azul para los íconos */
     }
+
 
     .footer-map {
         flex: 1;
@@ -91,9 +98,16 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
     .footer-bottom {
         text-align: center;
         margin-top: 20px;
-        font-size: 0.8em;
+        font-size:  1em;
         color: #888;
         width: 100%;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 12px;
     }
 
     /* Responsive */
@@ -112,5 +126,19 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
 
     .h2{
         color: white;
+    }
+
+
+    .w3-third{
+        width: 33%;
+    }
+    .w3-twothird {
+    width: 67%;
+    }
+
+    .w3-content {
+        margin: 0 auto;
+        max-width: 1200px; /* Ajusta el tamaño máximo */
+        padding: 20px; /* Espaciado para mejor visualización */
     }
 

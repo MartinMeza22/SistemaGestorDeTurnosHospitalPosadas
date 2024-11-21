@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../reservarFacundo.css">
-<link rel="stylesheet" href="../navFacundo.css">
+<link rel="stylesheet" href="../styles/reservarFacundo.css">
+<link rel="stylesheet" href="../styles/navFacundo.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -24,7 +25,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <nav class="w3-bar w3-card-4">
     <!-- Left side: Logo and text -->
     <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
-      <img src="../isologotipoPosadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+      <img src="../../PRUEBA_FACUNDO/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
       <span style="font-size: x-large" class="w3-hide-small">Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
   
@@ -44,9 +45,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
 <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Nadal, Franco Quispe</a>
 <a href="./reserveShiftView.html" onclick="w3_close()" class="w3-bar-item w3-button">RESERVAR TURNO</a>
-<a href="nextShiftsView.html" onclick="w3_close()" class="w3-bar-item w3-button">PRÓXIMOS TURNOS</a>
+<a href="nextsShiftsView.html" onclick="w3_close()" class="w3-bar-item w3-button">PRÓXIMOS TURNOS</a>
 <a href="./turnosAterioresFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS ANTERIORES</a>
-<a href="../indexFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">CERRAR SESIÓN</a>
+<a href="../../PRUEBA_FACUNDO/indexFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">CERRAR SESIÓN</a>
 </nav>
 
   </nav>
@@ -64,13 +65,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <a href="reserveShiftView.html" class="w3-bar-item w3-button w3-button-active w3-teall">
                   <i class="fa fa-calendar-plus-o fa-fw w3-margin-right"></i> Reservar Turnos
                 </a>
-                <a href="nextShiftsView.html" class="w3-bar-item w3-button">
+                <a href="nextsShiftsView.html" class="w3-bar-item w3-button">
                   <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Próximos Turnos
                 </a>
                 <a href="turnosAnterioresFacundo" class="w3-bar-item w3-button">
                   <i class="fa fa-history fa-fw w3-margin-right"></i> Turnos Anteriores
                 </a>
-                <a href="nextShiftsView.html" class="w3-bar-item w3-button">
+                <a href="nextsShiftsView.html" class="w3-bar-item w3-button">
                   <i class="fa fa-calendar-times-o fa-fw w3-margin-right"></i> Cancelar Turno
                 </a>
               </div>
@@ -171,37 +172,123 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
 </header>
 
-<!-- Footer -->
-<footer class="w3-center w3-black">
-    <p class="">&copy; 2024 Hospital Nacional Profesor Alejandro Posadas. Todos los derechos reservados.</p>
+<footer>
+  <!-- Texto e íconos -->
+  <div class="footer-left">
+    <h2>¿CÓMO LLEGAR?</h2>
+    <p><i class="fa-solid fa-location-dot"></i> Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386 (B1684) </p>
+    <p><i class="fa-solid fa-location-dot"></i>El Palomar, Provincia de Buenos Aires, Argentina</p>
+    <p><i class="fa-solid fa-phone"></i> (+54 11) 4469-9300</p>
+  </div>
+
+  <!-- Mapa -->
+  <div class="footer-map">
+    <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.1234567890123!2d-58.5781619!3d-34.6300078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb80b7396b9af%3A0xef2dc611cc3efabb!2sHospital+Nacional+Profesor+Alejandro+Posadas!5e0!3m2!1ses!2s!4v1636822951942"
+            allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright">
+    © Hospital Posadas 2024 v2.1.0. Todos los derechos reservados
+  </div>
 </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
+<style>
+  /* Estilo para el botón de cierre (X) */
+  .modal-close-btn {
+    font-size: 24px; /* Más grande */
+    font-weight: bold;
+    color: white; /* Color del texto */
+    background-color: #ff4c4c; /* Fondo rojo para destacar */
+    border-radius: 50%; /* Forma circular */
+    padding: 10px 15px; /* Espaciado interno */
+    position: absolute; /* Posición flotante */
+    top: 10px;
+    right: 10px;
+    cursor: pointer; /* Cambia a cursor de mano al pasar */
   }
-}
 
-// Close the sidebar with the close button
-function w3_close() {
+  /* Efecto hover en la X */
+  .modal-close-btn:hover {
+    background-color: #d32f2f; /* Más oscuro al pasar el mouse */
+  }
+
+  /* Botón "Confirmar turno" */
+  .confirm-btn {
+    background-color: #4CAF50; /* Fondo verde tonalizado */
+    color: white; /* Texto en blanco */
+    font-size: 18px; /* Tamaño del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia a cursor de mano */
+    display: flex; /* Alinea contenido en fila */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px; /* Espaciado entre el ícono y el texto */
+  }
+
+  /* Efecto hover en el botón */
+  .confirm-btn:hover {
+    background-color: #45a049; /* Un poco más oscuro al pasar el mouse */
+  }
+</style>
+</head>
+<body>
+
+<!-- Modal de ejemplo -->
+<div id="modal01" class="modal" style="display:none;">
+  <span class="modal-close-btn" onclick="cerrarModal('modal01')">X</span>
+  <div class="modal-content">
+    <p>¿Deseas confirmar este turno?</p>
+    <button class="confirm-btn" onclick="confirmarTurno()">
+      ✔ Confirmar Turno
+    </button>
+  </div>
+</div>
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
     mySidebar.style.display = "none";
-}
-</script>
+  }
 
+  // Mostrar y cerrar modal
+  function mostrarModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function cerrarModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  // Acción al confirmar turno
+  function confirmarTurno() {
+    alert("¡Turno confirmado!");
+    cerrarModal('modal01');
+  }
+</script>
 </body>
 </html>

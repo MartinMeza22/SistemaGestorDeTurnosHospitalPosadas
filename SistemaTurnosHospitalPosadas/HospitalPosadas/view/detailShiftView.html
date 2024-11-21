@@ -7,9 +7,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../reservarFacundo.css">
-<link rel="stylesheet" href="../navFacundo.css">
-<link rel="stylesheet" href="../detalleFacundo.css">
+<link rel="stylesheet" href="../styles/reservarFacundo.css">
+<link rel="stylesheet" href="../styles/navFacundo.css">
+<link rel="stylesheet" href="../../PRUEBA_FACUNDO/detalleFacundo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -25,7 +26,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <nav class="w3-bar w3-card-4">
     <!-- Left side: Logo and text -->
     <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
-      <img src="../isologotipoPosadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+      <img src="../../PRUEBA_FACUNDO/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
       <span style="font-size: x-large" class="w3-hide-small">Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
   
@@ -63,7 +64,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
         <!-- The Grid -->
         <div class="w3-row-padding">
-      
+
           <!-- Left Column with Vertical Navigation Bar -->
           <div class="w3-third w3-hide-small">
             <div class="w3-white w3-text-black w3-card-4 left-container">
@@ -83,12 +84,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               </div>
             </div><br>
           </div>
-      
+
           <!-- Right Column -->
           <div class="w3-twothird">
             <div class="w3-container w3-text-black w3-card w3-margin-bottom right-container">
               <h2 class="w3-text-black"><i class="fa fa-user-md fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Detalle del turno</h2>
-      
+
               <!-- Barra de progreso -->
               <div class="w3-light-grey w3-round-large w3-margin-bottom">
                 <div class="w3-container w3-teal w3-round-large" style="width:100%">3 de 3 pasos</div>
@@ -101,7 +102,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <p><strong>Fecha:</strong> 15 de diciembre de 2024</p>
                 <p><strong>Hora:</strong> 10:30 AM</p>
                 <p><strong>Consultorio:</strong> N° 305</p>
-            
+
                 <br>
                 <!-- BOTON PANTALLA GRANDE -->
             <div class="button-container w3-display-bottommiddle w3-hide-small w3-hide-medium">
@@ -156,37 +157,55 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <!-- BOTON PANTALLA GRANDE -->
         <div class="button-container w3-display-bottommiddle w3-hide-small w3-hide-medium">
             <a href="reserveShiftView.html"> <button class="w3-button w3-teal w3-round-large">Reservar otro turno</button></a>
-            <a href="../indexFacundo.html"><button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalSalir')">Salir</button></a>
+            <a href="../../PRUEBA_FACUNDO/indexFacundo.html"><button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalSalir')">Salir</button></a>
     </div>
 
   <!-- BOTON PANTALLA CHICA yt mediana -->
   <div class="button-container w3-show-small w3-show-medium w3-hide-large">
        <a href="reserveShiftView.html"> <button class="w3-button w3-teal w3-round-large">Reservar otro turno</button></a>
-       <a href="../indexFacundo.html"> <button class="w3-button w3-red w3-round-large" onclick="window.location.href='./indexFacundo'">Salir</button></a>
+       <a href="../../PRUEBA_FACUNDO/indexFacundo.html"> <button class="w3-button w3-red w3-round-large" onclick="window.location.href='./indexFacundo'">Volver al Inicio</button></a>
     </div>
 
 
 
 
-    
+
 </div>
     <br>
 
             </div>
           </div>
-      
+
           <!-- End Grid -->
         </div>
-      
+
         <!-- End Page Container -->
       </div>
 </header>
 
-<!-- Footer -->
-<footer class="w3-center w3-black">
-    <p class="">&copy; 2024 Hospital Nacional Profesor Alejandro Posadas. Todos los derechos reservados.</p>
+<footer>
+    <!-- Texto e íconos -->
+    <div class="footer-left">
+        <h2>¿CÓMO LLEGAR?</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386 (B1684) </p>
+        <p><i class="fa-solid fa-location-dot"></i>El Palomar, Provincia de Buenos Aires, Argentina</p>
+        <p><i class="fa-solid fa-phone"></i> (+54 11) 4469-9300</p>
+    </div>
+
+    <!-- Mapa -->
+    <div class="footer-map">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.1234567890123!2d-58.5781619!3d-34.6300078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb80b7396b9af%3A0xef2dc611cc3efabb!2sHospital+Nacional+Profesor+Alejandro+Posadas!5e0!3m2!1ses!2s!4v1636822951942"
+                allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+        © Hospital Posadas 2024 v2.1.0. Todos los derechos reservados
+    </div>
 </footer>
- 
+
 <script>
 // Modal Image Gallery
 function onClick(element) {
