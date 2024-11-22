@@ -105,3 +105,9 @@ input{
 #register-button{
     margin-bottom: 4px;
 }
+
+button a {
+    display: block; /* Hace que el enlace ocupe todo el botón */
+    height: 100%; /* Asegura que el enlace cubra todo el botón */
+}
+

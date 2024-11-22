@@ -1,0 +1,26 @@
+/* Ajustes generales */
+.column-container {
+    padding: 0 10px;
+}
+
+/* Responsivo: Móviles */
+@media (max-width: 768px) {
+    .w3-third, .w3-twothird {
+        width: 100%;
+        display: block;
+    }
+
+    .w3-half {
+        width: 100%;
+        display: block;
+    }
+
+    .left-container {
+        margin-bottom: 20px;
+    }
+
+    .w3-button {
+        width: 100%; /* Botones ocupan el ancho completo */
+        text-align: center;
+    }
+}

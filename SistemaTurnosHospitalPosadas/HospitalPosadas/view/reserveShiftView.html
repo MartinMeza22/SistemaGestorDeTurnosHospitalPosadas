@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../styles/reservarFacundo.css">
-<link rel="stylesheet" href="../styles/navFacundo.css">
+<link rel="stylesheet" href="../styles/navStyle.css">
+  <link rel="stylesheet" href="../styles/responsiveReserveShiftStyle.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -25,8 +26,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <nav class="w3-bar w3-card-4">
     <!-- Left side: Logo and text -->
     <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
-      <img src="../../PRUEBA_FACUNDO/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-      <span style="font-size: x-large" class="w3-hide-small">Hospital Nacional Profesor Alejandro Posadas</span>
+      <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+      <span style="font-size: x-large" >Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
   
     <!-- Right side: Registrarse -->
@@ -57,7 +58,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
         <!-- The Grid -->
         <div class="w3-row-padding">
-      
+
           <!-- Left Column with Vertical Navigation Bar -->
           <div class="w3-third w3-hide-small">
             <div class="w3-white w3-text-black w3-card-4 left-container">
@@ -77,17 +78,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               </div>
             </div><br>
           </div>
-      
+
           <!-- Right Column -->
           <div class="w3-twothird">
             <div class="w3-container w3-text-black w3-card w3-margin-bottom right-container">
               <h2 class="w3-text-black"><i class="fa fa-calendar-plus-o fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Formulario de Reserva</h2>
-      
+
               <!-- Barra de progreso -->
               <div class="w3-light-grey w3-round-large w3-margin-bottom">
                 <div class="w3-container w3-teal w3-round-large" style="width:33%">1 de 3 pasos</div>
               </div>
-      
+
               <form method="post" action="selectEspecialistView.html">
                 <!-- Para quién es el turno -->
                 <label for="turnFor">¿Para quién es el turno?</label>
@@ -95,7 +96,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                   <option value="myself">Para mí</option>
                   <option value="other">Para otro</option>
                 </select>
-      
+
                 <!-- Start two-column layout -->
                 <div class="w3-row">
                   <!-- Column 1 -->
@@ -109,7 +110,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                       <label>Número de DNI:</label>
                       <input type="text" value="12345678" readonly>
                     </div>
-      
+
                     <!-- Datos para otro -->
                     <div id="otherInfo" style="display: none;">
                       <label for="otherName">Nombre:</label>
@@ -120,7 +121,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                       <input type="text" id="otherDNI" name="otherDNI">
                     </div>
                   </div>
-      
+
                   <!-- Column 2 -->
                   <div class="w3-half">
                     <!-- Especialidad médica -->
@@ -132,11 +133,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                       <option value="dermatology">Dermatología</option>
                       <option value="neurology">Neurología</option>
                     </select>
-      
+
                     <!-- Fecha -->
                     <label for="date">Fecha:</label>
                     <input type="date" id="date" name="date" style="width: 100%">
-      
+
                     <!-- Horario -->
                     <label for="time">Horario:</label>
                     <select id="time" name="time">
@@ -149,7 +150,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                   </div>
                 </div>
                 <!-- End two-column layout -->
-      
+
                 <!-- Botón de reservar turno PANTALLA MEDIANA Y GRANDE -->
                 <div class="w3-right w3-hide-small" >
                   <button type="submit" class="w3-button  w3-margin" style="background-color: #154564;  border-radius: 10px;  color: white;">Reservar Turno</button>
@@ -159,15 +160,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                  <div class="w3-hide-large w3-hide-medium" style="display: flex; justify-content: center;" >
                     <button type="submit" class="w3-button  w3-margin" style="background-color: #154564;  border-radius: 10px;  color: white;">Reservar Turno</button>
                   </div>
-        
-      
+
+
               </form>
             </div>
           </div>
-      
+
           <!-- End Grid -->
         </div>
-      
+
         <!-- End Page Container -->
       </div>
 </header>
@@ -175,7 +176,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <footer>
   <!-- Texto e íconos -->
   <div class="footer-left">
-    <h2>¿CÓMO LLEGAR?</h2>
+    <h2 id="h2-footer">¿CÓMO LLEGAR?</h2>
     <p><i class="fa-solid fa-location-dot"></i> Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386 (B1684) </p>
     <p><i class="fa-solid fa-location-dot"></i>El Palomar, Provincia de Buenos Aires, Argentina</p>
     <p><i class="fa-solid fa-phone"></i> (+54 11) 4469-9300</p>
