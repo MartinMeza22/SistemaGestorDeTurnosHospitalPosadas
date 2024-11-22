@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/responsiveReserveShiftStyle.css">
     <link rel="stylesheet" href="../styles/responsiveDeteailShiftStyle.css">
+    <link rel="stylesheet" href="../styles/buttonBackStyle.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -61,7 +62,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
 <!-- Header with full-height image -->
-<header class=" w3-display-container w3-grayscale-min" id="home" style="height: calc(100vh - 180px)">
+<header class=" w3-display-container w3-grayscale-min" id="home" >
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
         <!-- The Grid -->
@@ -71,13 +72,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <div class="w3-third w3-hide-small">
             <div class="w3-white w3-text-black w3-card-4 left-container">
               <div class="w3-bar-block">
-                <a href="#home" class="w3-bar-item w3-button w3-button-active w3-teall">
+                <a href="./reserveShiftView.html" class="w3-bar-item w3-button w3-button-active w3-teall">
                   <i class="fa fa-calendar-plus-o fa-fw w3-margin-right"></i> Reservar Turnos
                 </a>
-                <a href="#about" class="w3-bar-item w3-button">
+                <a href="./nextsShiftsView.html" class="w3-bar-item w3-button">
                   <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Próximos Turnos
                 </a>
-                <a href="#services" class="w3-bar-item w3-button">
+                <a href="./previouShifts.html" class="w3-bar-item w3-button">
                   <i class="fa fa-history fa-fw w3-margin-right"></i> Turnos Anteriores
                 </a>
                 <a href="#portfolio" class="w3-bar-item w3-button">
@@ -85,6 +86,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </a>
               </div>
             </div><br>
+              <a href="javascript:history.back()" class="back-button">Volver Atrás</a>
           </div>
 
           <!-- Right Column -->
@@ -175,7 +177,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- BOTON PANTALLA CHICA yt mediana -->
   <div class="button-container w3-show-small w3-show-medium w3-hide-large">
        <a href="./reserveShiftView.html"> <button class="w3-button w3-teal w3-round-large">Reservar otro turno</button></a>
-       <a href="./reserveShiftView.html"> <button class="w3-button w3-red w3-round-large">Volver al Inicio</button></a>
+       <a href="./main.html"> <button class="w3-button w3-red w3-round-large">Volver al Inicio</button></a>
     </div>
 
 

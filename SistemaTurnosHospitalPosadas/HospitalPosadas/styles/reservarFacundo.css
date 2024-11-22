@@ -170,3 +170,8 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
     .footer-corregido{
         margin-top: 2em;
     }
+
+    #time{
+        padding: 0.85em;
+    }
+

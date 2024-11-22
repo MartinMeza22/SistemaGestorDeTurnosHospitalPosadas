@@ -1,3 +1,6 @@
+.footer-corregido{
+    margin-top: 1.3em;
+}
 @media (max-width: 768px) {
     /* Ocultar el contenedor de usuario */
     .user-info {

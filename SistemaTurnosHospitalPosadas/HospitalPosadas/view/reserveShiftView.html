@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="../styles/reservarFacundo.css">
 <link rel="stylesheet" href="../styles/navStyle.css">
   <link rel="stylesheet" href="../styles/responsiveReserveShiftStyle.css">
+  <link rel="stylesheet" href="../styles/buttonBackStyle.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -29,13 +30,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
       <span style="font-size: x-large" >Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
-  
+
     <!-- Right side: Registrarse -->
     <div class="w3-btn w3-hover-none w3-right color-button w3-hide-small w3-hide-medium navLetrasBlancas" style="display: flex; height: 100%; align-items: center; justify-content: center;">
         <i class="fa fa-user"></i> &nbsp; Nadal, Franco Quispe
-      
+
     </div>
-    
+
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-text-white" onclick="w3_open()">
     <i class="fa fa-bars"></i>
   </a>
@@ -63,20 +64,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <div class="w3-third w3-hide-small">
             <div class="w3-white w3-text-black w3-card-4 left-container">
               <div class="w3-bar-block">
-                <a href="reserveShiftView.html" class="w3-bar-item w3-button w3-button-active w3-teall">
+                <a href="./reserveShiftView.html" class="w3-bar-item w3-button w3-button-active w3-teall">
                   <i class="fa fa-calendar-plus-o fa-fw w3-margin-right"></i> Reservar Turnos
                 </a>
-                <a href="nextsShiftsView.html" class="w3-bar-item w3-button">
+                <a href="./nextsShiftsView.html" class="w3-bar-item w3-button">
                   <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Próximos Turnos
                 </a>
-                <a href="turnosAnterioresFacundo" class="w3-bar-item w3-button">
+                <a href="./previouShifts.html" class="w3-bar-item w3-button">
                   <i class="fa fa-history fa-fw w3-margin-right"></i> Turnos Anteriores
                 </a>
                 <a href="nextsShiftsView.html" class="w3-bar-item w3-button">
                   <i class="fa fa-calendar-times-o fa-fw w3-margin-right"></i> Cancelar Turno
                 </a>
               </div>
+
             </div><br>
+            <a href="javascript:history.back()" class="back-button">Volver Atrás</a>
           </div>
 
           <!-- Right Column -->

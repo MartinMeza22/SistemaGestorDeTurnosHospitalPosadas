@@ -8,9 +8,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../styles/reservarFacundo.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../styles/navStyle.css">
 
   <link rel="stylesheet" href="../styles/nextShiftsStyle.css">
+  <link rel="stylesheet" href="../styles/buttonBackStyle.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -111,13 +113,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <div class="w3-third w3-hide-small">
             <div class="w3-white w3-text-black w3-card-4 left-container">
               <div class="w3-bar-block">
-                <a href="#home" class="w3-bar-item w3-button">
+                <a href="./reserveShiftView.html" class="w3-bar-item w3-button">
                   <i class="fa fa-calendar-plus-o fa-fw w3-margin-right"></i> Reservar Turnos
                 </a>
-                <a href="#about" class="w3-bar-item w3-button w3-button-active w3-teall">
+                <a href="./nextsShiftsView.html" class="w3-bar-item w3-button w3-button-active w3-teall">
                   <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Próximos Turnos
                 </a>
-                <a href="#services" class="w3-bar-item w3-button">
+                <a href="./previouShifts.html" class="w3-bar-item w3-button">
                   <i class="fa fa-history fa-fw w3-margin-right"></i> Turnos Anteriores
                 </a>
                 <a href="#portfolio" class="w3-bar-item w3-button">
@@ -125,6 +127,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </a>
               </div>
             </div><br>
+            <a href="javascript:history.back()" class="back-button">Volver Atrás</a>
           </div>
       
          <!-- Right Column -->
@@ -205,10 +208,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 </header>
 
-<footer>
+<footer class="footer-corregido">
   <!-- Texto e íconos -->
   <div class="footer-left">
-    <h2>¿CÓMO LLEGAR?</h2>
+    <h2 id="h2-footer">¿CÓMO LLEGAR?</h2>
     <p><i class="fa-solid fa-location-dot"></i> Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386 (B1684) </p>
     <p><i class="fa-solid fa-location-dot"></i>El Palomar, Provincia de Buenos Aires, Argentina</p>
     <p><i class="fa-solid fa-phone"></i> (+54 11) 4469-9300</p>
