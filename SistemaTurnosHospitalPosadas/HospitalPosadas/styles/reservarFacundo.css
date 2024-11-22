@@ -175,3 +175,43 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
         padding: 0.85em;
     }
 
+.news-card {
+    background-color: white; /* Fondo blanco para contraste */
+    color: #154564; /* Texto acorde a la paleta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: 20px 0; /* Separación entre tarjetas */
+    padding: 15px; /* Espaciado interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones suaves */
+}
+
+.news-card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.news-card h3 {
+    font-size: 1.5em; /* Tamaño del título */
+    color: #0d3450; /* Azul oscuro para destacar */
+    margin-bottom: 10px; /* Espaciado bajo el título */
+}
+
+.news-card p {
+    font-size: 1em; /* Texto descriptivo */
+    line-height: 1.5; /* Mejor legibilidad */
+    margin-bottom: 15px; /* Espaciado bajo el texto */
+    color: #365a98; /* Azul más suave para el texto */
+}
+
+.news-card a {
+    font-size: 0.9em; /* Tamaño del enlace */
+    color: #154564; /* Azul fuerte */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Destacar el enlace */
+    transition: color 0.3s ease; /* Animación suave para el color */
+}
+
+.news-card a:hover {
+    color: #0d3450; /* Cambiar a un azul más oscuro al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}

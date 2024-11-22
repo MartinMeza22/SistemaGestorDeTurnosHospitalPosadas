@@ -11,8 +11,10 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../styles/navStyle.css">
 
-  <link rel="stylesheet" href="../styles/nextShiftsStyle.css">
+
   <link rel="stylesheet" href="../styles/buttonBackStyle.css">
+  <link rel="stylesheet" href="../styles/cancelShiftStyle.css">
+  <link rel="stylesheet" href="../styles/nextShiftsStyle.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -152,9 +154,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               <td>10:00 AM</td>
               <td>Cardiología</td>
               <td>Dr. Juan Pérez</td>
-              <td>
+              <td class="centrado">
                 <button class="action-btn" onclick="modificarTurno()">Modificar</button>
-                <button class="action-btn" onclick="cancelarTurno()">Cancelar</button>
+                <button class="action-btn action-btn-can w3-red " onclick="mostrarModal('modalCancelar')">Cancelar</button>
               </td>
             </tr>
             <tr>
@@ -162,9 +164,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               <td>11:30 AM</td>
               <td>Dermatología</td>
               <td>Dra. Ana López</td>
-              <td>
+              <td class="centrado">
                 <button class="action-btn" onclick="modificarTurno()">Modificar</button>
-                <button class="action-btn" onclick="cancelarTurno()">Cancelar</button>
+                <button class="action-btn action-btn-can w3-red " onclick="mostrarModal('modalCancelar')">Cancelar</button>
               </td>
             </tr>
             <tr>
@@ -172,9 +174,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               <td>02:00 PM</td>
               <td>Neurología</td>
               <td>Dr. Carlos García</td>
-              <td>
+              <td class="centrado">
                 <button class="action-btn" onclick="modificarTurno()">Modificar</button>
-                <button class="action-btn" onclick="cancelarTurno()">Cancelar</button>
+                <button class="action-btn action-btn-can w3-red " onclick="mostrarModal('modalCancelar')">Cancelar</button>
               </td>
             </tr>
             <tr>
@@ -182,9 +184,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               <td>02:00 PM</td>
               <td>Neurología</td>
               <td>Dr. Carlos García</td>
-              <td>
+              <td class="centrado">
                 <button class="action-btn" onclick="modificarTurno()">Modificar</button>
-                <button class="action-btn" onclick="cancelarTurno()">Cancelar</button>
+                <button class="action-btn action-btn-can w3-red " onclick="mostrarModal('modalCancelar')">Cancelar</button>
               </td>
             </tr>
             <tr>
@@ -192,9 +194,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               <td>02:00 PM</td>
               <td>Neurología</td>
               <td>Dr. Carlos García</td>
-              <td>
+              <td class="centrado">
                 <button class="action-btn" onclick="modificarTurno()">Modificar</button>
-                <button class="action-btn" onclick="cancelarTurno()">Cancelar</button>
+                <button class="action-btn action-btn-can w3-red " onclick="mostrarModal('modalCancelar')">Cancelar</button>
               </td>
             </tr>
             </tbody>
@@ -206,6 +208,48 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
     </div>
   </div>
+  <div id="modalCancelar" class="w3-modal" style="display:none;">
+    <div class="w3-modal-content w3-card-4 w3-animate-opacity w3-round-large">
+      <!-- Encabezado del Modal -->
+      <header class="w3-container" style="background-color: #D32F2F; color: white;">
+            <span onclick="cerrarModal('modalCancelar')"
+                  class="w3-button w3-display-topright"
+                  style="color: white; font-weight: bold;">&times;</span>
+        <h2>¿Está seguro que quiere cancelar su turno?</h2>
+      </header>
+
+      <!-- Contenido del Modal -->
+      <div class="w3-container" style="background-color: #FFCDD2; color: #B71C1C; text-align: center;">
+        <p>Si cancela este turno, no podrá recuperarlo.</p>
+      </div>
+
+      <!-- Botones del Modal -->
+      <footer class="w3-container w3-center w3-padding" style="background-color: #F44336;">
+        <button class="w3-button w3-red w3-round-large"
+                onclick="confirmarCancelarTurno()"
+                style="margin-right: 10px;">Sí, cancelar</button>
+        <button class="w3-button w3-gray w3-round-large"
+                onclick="cerrarModal('modalCancelar')">No</button>
+      </footer>
+    </div>
+  </div>
+
+  <script>// Mostrar el modal
+  function mostrarModal(idModal) {
+    document.getElementById(idModal).style.display = 'block';
+  }
+
+  // Cerrar el modal
+  function cerrarModal(idModal) {
+    document.getElementById(idModal).style.display = 'none';
+  }
+
+  // Acción al confirmar la cancelación
+  function confirmarCancelarTurno() {
+
+    cerrarModal('modalCancelar');
+  }
+  </script>
 </header>
 
 <footer class="footer-corregido">

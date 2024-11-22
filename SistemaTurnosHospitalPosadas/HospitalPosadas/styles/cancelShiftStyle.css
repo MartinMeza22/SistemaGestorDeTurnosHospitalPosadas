@@ -1,0 +1,6 @@
+.centrado{
+    display: flex;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
