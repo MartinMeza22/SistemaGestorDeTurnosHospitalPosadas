@@ -1,0 +1,78 @@
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .form-wrapper {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+    /* Archivo responsivo para móviles */
+
+    /* Ajustes generales */
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+
+    header img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        line-height: 1.4;
+    }
+
+    /* Botones de navegación en el header */
+    .w3-right {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Contenedor del formulario */
+    .form-wrapper {
+        padding: 20px;
+    }
+
+    /* Formularios */
+    input {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    /* Botones */
+    button {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9em;
+        padding: 1em;
+    }
+}

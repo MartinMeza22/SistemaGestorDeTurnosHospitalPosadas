@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Próximos Turnos</title>
+    <title>PROXIMOS TURNOS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../styles/reserveStyle.css">
+    <link rel="stylesheet" href="../styles/reservarFacundo.css">
+    <link rel="stylesheet" href="../styles/navStyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/previouShiftsStyles.css">
     <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
         /* Estilos generales */
         html, body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto", sans-serif}
         body { background-color: #ddd; }
@@ -52,152 +60,184 @@
         .action-btn:hover {
             background-color: #0d3450;
         }
-        .turnos-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 18px;
-            text-align: left;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .turnos-table th, .turnos-table td {
-            padding: 12px;
-            border: 1px solid #365a98; /* Borde visible */
-        }
-
-        .turnos-table th {
-            background-color: #154564;
-            color: white;
-            font-weight: bold;
-        }
-
-        .turnos-table tr:nth-child(even) {
-            background-color: #f2f2f2; /* Colores alternados */
-        }
-
-        .turnos-table tr:hover {
-            background-color: #ddd; /* Resaltar fila al pasar el mouse */
-        }
 
     </style>
 </head>
 
-<body class="w3-light-grey">
+<body>
 
-<header class="w3-container w3-tealll w3-padding-small">
-    <div class="w3-half">
-        <img src="../images/isologotipo.png" alt="Isologotipo">
-        <h1 class="w3-text-white">Hospital Nacional Profesor Alejandro Posadas</h1>
+<!-- Nav Bar -->
+<nav class="w3-bar w3-card-4">
+    <!-- Left side: Logo and text -->
+    <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+        <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <span style="font-size: x-large" >Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
-    <div class="w3-half">
-        <p class="w3-text-white">
-            <i class="fa fa-user w3-margin-right"></i>Nadal, Franco
-        </p>
+
+    <!-- Right side: Registrarse -->
+    <div class="w3-btn w3-hover-none w3-right color-button w3-hide-small w3-hide-medium navLetrasBlancas" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+        <i class="fa fa-user"></i> &nbsp; Nadal, Franco Quispe
+
     </div>
-</header>
 
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-    <!-- The Grid -->
-    <div class="w3-row-padding">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-text-white" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    </div>
 
-        <!-- Left Column with Vertical Navigation Bar -->
-        <div class="w3-third">
-            <div class="w3-white w3-text-black w3-card-4 left-container">
-                <div class="w3-bar-block">
-                    <a href="#home" class="w3-bar-item w3-button">
-                        <i class="fa fa-calendar-plus-o fa-fw w3-margin-right"></i> Reservar Turnos
-                    </a>
-                    <a href="#about" class="w3-bar-item w3-button">
-                        <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Próximos Turnos
-                    </a>
-                    <a href="#services" class="w3-bar-item w3-button w3-teall">
-                        <i class="fa fa-history fa-fw w3-margin-right"></i> Turnos Anteriores
-                    </a>
-                    <a href="#portfolio" class="w3-bar-item w3-button">
-                        <i class="fa fa-calendar-times-o fa-fw w3-margin-right"></i> Cancelar Turno
-                    </a>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Nadal, Franco Quispe</a>
+        <a href="reserveShiftView.html" onclick="w3_close()" class="w3-bar-item w3-button">RESERVAR TURNO</a>
+        <a href="./nextsShiftsView.html" onclick="w3_close()" class="w3-bar-item w3-button">PRÓXIMOS TURNOS</a>
+        <a href="./turnosAterioresFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS ANTERIORES</a>
+        <a href="../../PRUEBA_FACUNDO/indexFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">CERRAR SESIÓN</a>
+    </nav>
+
+</nav>
+
+
+
+<!-- Header with full-height image -->
+<header class=" w3-display-container w3-grayscale-min" id="home"  style="height: calc(100vh - 180px)">
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column with Vertical Navigation Bar -->
+            <div class="w3-third ">
+                <div class="w3-white w3-text-black w3-card-4 left-container">
+                    <div class="w3-bar-block">
+                        <a href="#home" class="w3-bar-item w3-button">
+                            <i class="fa fa-calendar-plus-o fa-fw w3-margin-right"></i> Reservar Turnos
+                        </a>
+                        <a href="#about" class="w3-bar-item w3-button">
+                            <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Próximos Turnos
+                        </a>
+                        <a href="#services" class="w3-bar-item w3-button w3-teall">
+                            <i class="fa fa-history fa-fw w3-margin-right"></i> Turnos Anteriores
+                        </a>
+                        <a href="#portfolio" class="w3-bar-item w3-button">
+                            <i class="fa fa-calendar-times-o fa-fw w3-margin-right"></i> Cancelar Turno
+                        </a>
+                    </div>
+                </div><br>
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+                <div class="w3-container w3-heightt w3-text-black w3-card w3-margin-bottom right-container">
+                    <h2 class="w3-text-black w3-padding-16">
+                        <i class="fa fa-history fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>
+                        Turnos Anteriores
+                    </h2>
+
+                    <table class="turnos-table">
+                        <thead>
+                        <tr>
+                            <th>Paciente</th>
+                            <th>Especialista</th>
+                            <th>Especialidad</th>
+                            <th>Fecha</th>
+                            <th>Notas de Consulta</th>
+                            <th>Medicamentos Sugeridos</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Franco Nadal</td>
+                            <td>Dra. Ana López</td>
+                            <td>Dermatología</td>
+                            <td>15/10/2024</td>
+                            <td>Tratamiento para piel seca y alergias.</td>
+                            <td>Crema hidratante, antihistamínicos orales.</td>
+                        </tr>
+                        <tr>
+                            <td>Franco Nadal</td>
+                            <td>Dr. Carlos García</td>
+                            <td>Neurología</td>
+                            <td>20/09/2024</td>
+                            <td>Revisión anual, control de reflejos.</td>
+                            <td>Vitaminas B12 y magnesio.</td>
+                        </tr>
+                        <tr>
+                            <td>Franco Nadal</td>
+                            <td>Dr. Juan Pérez</td>
+                            <td>Cardiología</td>
+                            <td>10/08/2024</td>
+                            <td>Control de presión arterial.</td>
+                            <td>Enalapril 10 mg diario.</td>
+                        </tr>
+                        <tr>
+                            <td>Franco Nadal</td>
+                            <td>Dr. Juan Pérez</td>
+                            <td>Cardiología</td>
+                            <td>10/08/2024</td>
+                            <td>Control de presión arterial.</td>
+                            <td>Enalapril 10 mg diario.</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div><br>
-        </div>
 
-        <!-- Right Column -->
-        <div class="w3-twothird">
-            <div class="w3-container w3-text-black w3-card w3-margin-bottom right-container">
-                <h2 class="w3-text-black w3-padding-16">
-                    <i class="fa fa-history fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>
-                    Turnos Anteriores
-                </h2>
-
-                <table class="turnos-table">
-                    <thead>
-                    <tr>
-                        <th>Paciente</th>
-                        <th>Especialista</th>
-                        <th>Especialidad</th>
-                        <th>Fecha</th>
-                        <th>Notas de Consulta</th>
-                        <th>Medicamentos Sugeridos</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Franco Nadal</td>
-                        <td>Dra. Ana López</td>
-                        <td>Dermatología</td>
-                        <td>15/10/2024</td>
-                        <td>Tratamiento para piel seca y alergias.</td>
-                        <td>Crema hidratante, antihistamínicos orales.</td>
-                    </tr>
-                    <tr>
-                        <td>Franco Nadal</td>
-                        <td>Dr. Carlos García</td>
-                        <td>Neurología</td>
-                        <td>20/09/2024</td>
-                        <td>Revisión anual, control de reflejos.</td>
-                        <td>Vitaminas B12 y magnesio.</td>
-                    </tr>
-                    <tr>
-                        <td>Franco Nadal</td>
-                        <td>Dr. Juan Pérez</td>
-                        <td>Cardiología</td>
-                        <td>10/08/2024</td>
-                        <td>Control de presión arterial.</td>
-                        <td>Enalapril 10 mg diario.</td>
-                    </tr>
-                    </tbody>
-                </table>
             </div>
 
         </div>
-
     </div>
-</div>
+</header>
 
-<footer class="w3-container w3-tealll w3-center w3-margin-top w3-padding-large">
-    <p>Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="footer-corregido">
+    <!-- Texto e íconos -->
+    <div class="footer-left">
+        <h2 id="h2-footer">¿CÓMO LLEGAR?</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386 (B1684) </p>
+        <p><i class="fa-solid fa-location-dot"></i>El Palomar, Provincia de Buenos Aires, Argentina</p>
+        <p><i class="fa-solid fa-phone"></i> (+54 11) 4469-9300</p>
+    </div>
+
+    <!-- Mapa -->
+    <div class="footer-map">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.1234567890123!2d-58.5781619!3d-34.6300078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb80b7396b9af%3A0xef2dc611cc3efabb!2sHospital+Nacional+Profesor+Alejandro+Posadas!5e0!3m2!1ses!2s!4v1636822951942"
+                allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+        © Hospital Posadas 2024 v2.1.0. Todos los derechos reservados
+    </div>
 </footer>
 
 <script>
-    // Función para cancelar turno (puedes adaptarla para enviar la solicitud al servidor)
-    function cancelarTurno() {
-        alert("Turno cancelado exitosamente.");
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
     }
 </script>
 
-<script>
-    function modificarTurno() {
-        alert("Redirigiendo al formulario para modificar el turno.");
-    }
-
-</script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+
+    nav{
+        height: 70px;
+        background-color: rgb(21, 69, 101);
+    }
+
+    .navLetrasBlancas{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    }
+
+  .cards-container{
+      background-color: white;
+  }
+
+
+  #h2-footer{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  #contenedor-detail{
+      padding: 5em 0;
+  }
+
+  #w3-redd{
+      background-color: #365a98;
+  }
+
+  .w3-footer-p{
+      margin: 1em 0em;
+  }

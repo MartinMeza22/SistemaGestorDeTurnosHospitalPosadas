@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+    /* Ajustar el layout para pantallas más pequeñas */
+    .w3-bar-item {
+        font-size: smaller;
+    }
+
+    /* Sidebar desaparece en pantallas pequeñas */
+    .w3-sidebar {
+        display: none;
+    }
+
+    /* Contenido de la página toma todo el ancho */
+    .w3-twothird, .w3-third {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* El header ocupa un espacio reducido */
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Botones de acción se ajustan */
+    .action-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para la tabla */
+    table {
+        width: 100%; /* Asegura que la tabla ocupe el 100% del ancho */
+        border-collapse: collapse; /* Colapsa los bordes */
+    }
+
+    thead, tbody, th, td, tr {
+        display: block; /* Cambia a bloque para apilar elementos */
+    }
+
+    thead tr {
+        position: absolute; /* Oculta el encabezado en pantallas pequeñas */
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 15px; /* Espacio entre filas */
+    }
+
+    td {
+        text-align: right; /* Alinea el texto a la derecha */
+        position: relative;
+        padding-left: 50%; /* Espacio para el contenido */
+        border: 1px solid #ccc; /* Añade borde a las celdas */
+    }
+
+    td::before {
+        content: attr(data-label); /* Muestra el nombre de la columna */
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        white-space: nowrap; /* Evita el salto de línea */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #154564;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer map */
+.footer-map iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* Prevenir el scroll horizontal en dispositivos móviles */
+body {
+    overflow-x: hidden;
+}
