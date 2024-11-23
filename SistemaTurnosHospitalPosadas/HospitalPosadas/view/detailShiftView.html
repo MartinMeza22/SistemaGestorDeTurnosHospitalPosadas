@@ -91,7 +91,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
           <!-- Right Column -->
           <div class="w3-twothird">
-            <div class="w3-container w3-text-black w3-card w3-margin-bottom right-container">
+            <div class="w3-container w3-text-black divprincipal w3-card w3-margin-bottom right-container">
               <h2 class="w3-text-black"><i class="fa fa-user-md fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Detalle del turno</h2>
 
               <!-- Barra de progreso -->
@@ -99,7 +99,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <div class="w3-container w3-teal w3-round-large" style="width:100%">3 de 3 pasos</div>
             </div>
 
-            <div class="w3-container w3-display-container">
+            <div class="w3-container boton w3-display-container">
                 <h3>Turno Seleccionado</h3>
                 <p><strong>Especialista:</strong> Dr. Juan Pérez</p>
                 <p><strong>Especialidad:</strong> Cardiología</p>
@@ -110,8 +110,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <br>
                 <!-- BOTON PANTALLA GRANDE -->
             <div class="button-container w3-display-bottommiddle w3-hide-small w3-hide-medium">
-                <button class="w3-button w3-teal w3-round-large" onclick="mostrarModal('modalConfirmar')">Confirmar Turno</button>
-                <button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalVolver')">Volver Atrás</button>
+              <button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalVolver')">Volver Atrás</button>
+            
+              <button class="w3-button botonConfirmar w3-teal w3-round-large" onclick="mostrarModal('modalConfirmar')">Confirmar Turno</button>
             </div>
                 <!-- BOTON PANTALLA CHICA yt mediana -->
                 <div class="button-container w3-show-small w3-show-medium w3-hide-large">
@@ -160,7 +161,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <span onclick="cerrarModal('modalConfirmar')" class="w3-button w3-display-topright">&times;</span>
         <h2>Turno Confirmado</h2>
     </header>
-    <div class="w3-container w3-display-container">
+    <div class="w3-container boton w3-display-container">
         <p><strong>Paciente:</strong> Juan Pérez</p>
         <p><strong>Documento:</strong> DNI 12345678</p>
         <p><strong>Especialidad:</strong> Medicina General</p>

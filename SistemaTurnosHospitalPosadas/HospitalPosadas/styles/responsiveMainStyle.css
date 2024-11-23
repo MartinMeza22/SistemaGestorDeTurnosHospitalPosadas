@@ -1,0 +1,15 @@
+.content{
+        background-image: url(../images/secretaria-medica-hospital-pasillo-clinica-sala-espera-recepcion-pasillo-vacio-asiento-paciente-visitante_1030874-13032.avif);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+}
+
+.content img{
+    width: 100%;
+    background-repeat: no-repeat;
+}

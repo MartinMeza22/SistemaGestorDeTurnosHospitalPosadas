@@ -10,3 +10,19 @@ header{
    margin: 0 0 2.65em 0;
 }
 
+
+.boton{
+    margin: 0;
+}
+
+.botonmargen{
+    margin-top: 3em;
+}
+
+.divprincipal{
+    margin: 0;
+}
+
+.botonConfirmar{
+    margin-left: 10em;
+}
