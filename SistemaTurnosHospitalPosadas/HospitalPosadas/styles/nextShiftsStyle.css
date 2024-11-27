@@ -10,6 +10,13 @@
     margin-top: 1.3em;
 }
 
+.footer-copyright{
+    text-align: center;
+}
+#h2-footer{
+    text-align: left;
+}
+
 @media screen and (max-width: 768px) {
     /* Ajustar el layout para pantallas más pequeñas */
     .w3-bar-item {
@@ -155,4 +162,92 @@ body {
 
 .action-btn-can{
     margin-left: 1em;
+}
+
+.conteiner-loco{
+    padding-bottom: 1em;
+}
+
+table {
+    border-collapse: collapse; /* Hace que los bordes no se dupliquen */
+    width: 100%;
+}
+th, td {
+    border: 1px solid black; /* Aplica un borde uniforme */
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2; /* Color de fondo para encabezados */
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        flex-direction: row; /* Deja de ser columna y se organiza en fila */
+        justify-content: space-between;
+        text-align: center; /* Centra el h2 incluso en pantallas grandes */
+    }
+
+    .footer-left {
+        flex: 1;
+        margin-right: 20px; /* Espaciado entre las columnas */
+    }
+
+    .footer-map {
+        flex: 1;
+    }
+
+    .footer-copyright {
+        text-align: left;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    footer h2 {
+        text-align: center; /* Centra el h2 en pantallas grandes */
+        width: 100%; /* Hace que el h2 ocupe el ancho completo */
+    }
+    #hospital-name {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    footer {
+        flex-direction: column; /* Mantiene las columnas en móvil */
+    }
+
+    .footer-left,
+    .footer-map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer h2 {
+        text-align: center; /* Centra el h2 en móviles */
+        width: 100%; /* Hace que el h2 ocupe el ancho completo */
+        margin-bottom: 20px; /* Aumenta el espaciado inferior */
+    }
+    #hospital-name {
+        font-size: 1.41em;
+    }
+    .nav-loco{
+        font-size: 1.5em;
+        padding: 0;
+    }
+    .spann{
+        font-size: 1.5em;
+    }
+}
+.tukk{
+    padding: 0;
+}
+
+#hospital-name{
+    font-size: x-large
 }

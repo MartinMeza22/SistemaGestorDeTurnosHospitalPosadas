@@ -26,3 +26,24 @@
     transform: translateY(0);
 }
 
+.cont-loco{
+    padding-bottom: 1em;
+}
+.otro-cont{
+    margin-top: 1em;
+}
+
+.tuk-p {
+    margin-bottom: 2em;
+}
+
+#iconn{
+    margin-right: 0.2em;
+}
+
+.homme{
+    margin-bottom: 3.3em;
+}
+.nav-loco{
+    padding: 0 1.09em;
+}

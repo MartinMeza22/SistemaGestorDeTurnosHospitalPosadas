@@ -1,6 +1,44 @@
+.spann{
+    font-size: x-large;
+}
 .centrado{
     display: flex;
     padding: 0;
     text-align: center;
     justify-content: center;
+}
+
+.margen-loco{
+    margin-left: 0.22em;
+}
+
+.icono-loco{
+    margin-right: 0.37em;
+}
+
+ table {
+     border-collapse: collapse; /* Hace que los bordes no se dupliquen */
+     width: 100%;
+ }
+th, td {
+    border: 1px solid black; /* Aplica un borde uniforme */
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2; /* Color de fondo para encabezados */
+}
+
+.nav-loco{
+    padding: 0 1.09em;
+}
+
+@media screen and (max-width: 599px) {
+    .nav-loco{
+        padding-left: 0;
+    }
+    .spann{
+        font-size: 1.1em;
+    }
+
 }

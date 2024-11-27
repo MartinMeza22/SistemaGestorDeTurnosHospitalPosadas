@@ -1,59 +1,222 @@
-/* Modales Responsivos */
-@media screen and (max-width: 768px) {
+#hospital-name{
+    font-size: x-large
+}
+
+
+/* Ajustes para los modales en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    /* Centrar los modales en pantallas pequeñas */
     .w3-modal-content {
-        width: 90%;  /* Ajusta el ancho del modal */
-        max-width: 500px;  /* Limita el tamaño máximo del modal */
+        width: 90%; /* Ajustar el ancho del modal para que ocupe el 90% de la pantalla */
+        margin: auto; /* Centramos el modal en la pantalla */
     }
 
-    .w3-modal {
-        padding: 0 !important;  /* Elimina el padding en móviles */
-    }
-
-    .w3-modal-content h2 {
-        font-size: 18px;  /* Tamaño de fuente para el título en pantallas pequeñas */
-    }
-
-    .w3-container p {
-        font-size: 14px;  /* Ajuste del tamaño de la fuente del texto */
-    }
-
-    /* Botones dentro del modal en dispositivos pequeños */
+    /* Hacer que los botones sean más grandes en dispositivos pequeños */
     .w3-button {
-        width: 100%;  /* Los botones ocupan todo el ancho disponible */
+        padding: 16px; /* Aumentar el tamaño de los botones */
+        font-size: 18px; /* Asegurarnos de que los botones sean legibles */
+    }
+
+    /* Ajustar el tamaño de la fuente de los textos en los modales */
+    .w3-container p {
+        font-size: 16px; /* Reducir ligeramente el tamaño del texto */
+    }
+
+    /* Evitar que el contenido se desborde y asegurar que todo se vea bien */
+    .w3-container {
+        padding: 15px; /* Asegurar que haya espacio alrededor del contenido */
+        word-wrap: break-word; /* Asegurarnos de que el texto largo se ajuste */
+    }
+
+    /* Cambiar el tamaño de los iconos */
+    .fa {
+        font-size: 24px; /* Hacer los iconos más pequeños y legibles */
+    }
+
+    /* Ajustar el navbar en pantallas pequeñas */
+    .w3-bar-item {
+        font-size: 16px; /* Ajustar el tamaño del texto en los ítems del menú */
+    }
+
+    /* Asegurar que la imagen del logo en el navbar sea más pequeña */
+    .w3-bar-item img {
+        height: 30px; /* Reducir el tamaño del logo */
+    }
+
+    /* Ajustar la visibilidad del botón para volver atrás */
+    .back-button {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        width: 100%;
         margin-top: 10px;
     }
 
-    .footer-container {
-        display: block;
-    }
-
+    /* Modificar la apariencia de los contenedores con botones */
     .button-container {
-        display: flex;
-        flex-direction: column;
+        display: block; /* Hacer que los botones se muestren en columna */
+        width: 100%;
+        padding: 10px;
     }
 
-    .footer-container .w3-button {
-        width: 100%; /* Asegura que los botones se ajusten al ancho de la pantalla */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .w3-modal-content {
-        width: 95%;
-    }
-
-    .w3-modal-content h2 {
+    /* Centrar los textos en el contenedor de los turnos seleccionados */
+    .cont-loco h3,
+    .cont-loco p {
+        text-align: center;
         font-size: 16px;
     }
 
-    .w3-container p {
-        font-size: 13px;
+    /* Ajustar los márgenes de la columna derecha */
+    .w3-twothird {
+        margin-top: 20px;
     }
 }
 
-@media (max-width: 600px) {
-    .modal-content {
-        width: 90%; /* Ancho más pequeño en pantallas pequeñas */
+/* Hacer que el navbar sea completamente visible en dispositivos pequeños */
+@media screen and (max-width: 600px) {
+    .w3-bar {
+        padding: 0; /* Reducir el padding en el navbar */
+    }
+
+    .w3-sidebar {
+        width: 250px; /* Asegurar que el sidebar ocupe el 100% del ancho */
+    }
+
+    .w3-bar-item {
+        font-size: 16px; /* Ajustar el tamaño de los ítems de la barra */
+    }
+
+    .w3-btn {
+        padding: 10px; /* Reducir el tamaño de los botones en el sidebar */
+        font-size: 16px;
+    }
+}
+/* Tamaño del modal en pantallas grandes (desktops) */
+.w3-modal-content {
+    width: 50%; /* Ajusta el tamaño al 50% del ancho de la pantalla en pantallas grandes */
+    max-width: 600px; /* El tamaño máximo del modal será de 600px */
+}
+
+/* Tamaño del modal en pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .w3-modal-content {
+        width: 70%; /* Ajusta el tamaño al 70% del ancho de la pantalla en tablets */
+        max-width: 500px; /* El tamaño máximo será de 500px */
     }
 }
 
+/* Tamaño del modal en pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .w3-modal-content {
+        width: 80%; /* Ajusta el tamaño al 80% del ancho de la pantalla en móviles */
+        max-width: 400px; /* El tamaño máximo será de 400px */
+    }
+}
+/* Estilos generales para el modal (sin afectar el diseño actual en pantallas grandes) */
+.w3-modal-content {
+    width: 50%;
+    max-width: 600px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Hacer que el modal ocupe más espacio en pantallas pequeñas */
+    .w3-modal-content {
+        width: 90%; /* Más ancho en móviles */
+        max-width: 400px; /* Restringir el tamaño máximo */
+        margin: 20px auto; /* Asegura que haya espacio alrededor */
+        border-radius: 10px; /* Opcional: bordes más redondeados */
+    }
+
+    /* Ajustar los botones dentro del modal */
+    .w3-modal-content footer button {
+        display: block; /* Asegurar que los botones se apilen verticalmente */
+        width: 100%; /* Botones más grandes para pantallas táctiles */
+        margin: 10px 0; /* Espaciado entre botones */
+    }
+
+    /* Cambiar la tipografía y alineación si es necesario */
+    .w3-modal-content header h2,
+    .w3-modal-content div p {
+        font-size: 16px; /* Reducir ligeramente el tamaño del texto */
+        text-align: center; /* Centrar contenido para mayor legibilidad */
+    }
+}
+/* Estilos generales para el modal */
+.w3-modal-content {
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+/* Estilo de header */
+.modal-header-volver,
+.modal-header-confirmar {
+    background-color: #388E3C;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Estilo del cuerpo */
+.modal-body-volver,
+.modal-body-confirmar {
+    padding: 20px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Estilo del footer */
+.modal-footer-volver,
+.modal-footer-confirmar {
+    padding: 15px;
+    background-color: #e0e0e0;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Estilos de los botones */
+.modal-footer-volver .w3-button,
+.modal-footer-confirmar .modal-boton {
+    margin: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.modal-footer-volver .boton-confirmar-volver {
+    background-color: #E53935;
+    color: white;
+}
+
+.modal-footer-confirmar .modal-boton {
+    background-color: #388E3C;
+    color: white;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .modal-responsivo {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .modal-body-volver,
+    .modal-body-confirmar {
+        font-size: 14px;
+    }
+
+    .modal-footer-volver .w3-button,
+    .modal-footer-confirmar .modal-boton {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}

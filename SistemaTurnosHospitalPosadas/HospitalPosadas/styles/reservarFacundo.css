@@ -215,3 +215,7 @@ input[type=text]:focus, select:focus, input[type=date]:focus {
     color: #0d3450; /* Cambiar a un azul más oscuro al pasar el mouse */
     text-decoration: underline; /* Subrayado al pasar el mouse */
 }
+
+#h2-footer{
+    margin: 0;
+}

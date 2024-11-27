@@ -24,5 +24,9 @@ header{
 }
 
 .botonConfirmar{
-    margin-left: 10em;
+    margin-left: 40em;
+}
+
+.boton-cont{
+    display: flex;
 }

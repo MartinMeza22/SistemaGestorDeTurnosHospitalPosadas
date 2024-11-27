@@ -70,11 +70,13 @@
 <body>
 
 <!-- Nav Bar -->
-<nav class="w3-bar w3-card-4">
+<nav class="w3-bar nav-loco w3-card-4">
     <!-- Left side: Logo and text -->
     <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+        <a href="./main.html" style="text-decoration: none; color: inherit;">
         <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-        <span style="font-size: x-large" >Hospital Nacional Profesor Alejandro Posadas</span>
+        <a href="./main.html" style="text-decoration: none; color: inherit;">
+        <span class="spann">Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
 
     <!-- Right side: Registrarse -->
@@ -117,13 +119,13 @@
                         <a href="./reserveShiftView.html" class="w3-bar-item w3-button">
                             <i class="fa fa-calendar-plus-o fa-fw w3-margin-right"></i> Reservar Turnos
                         </a>
-                        <a href="./nextsShiftsView.html" class="w3-bar-item w3-button w3-button-active w3-teall">
+                        <a href="./nextsShiftsView.html" class="w3-bar-item w3-button">
                             <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Próximos Turnos
                         </a>
                         <a href="./previouShifts.html" class="w3-bar-item w3-button">
                             <i class="fa fa-history fa-fw w3-margin-right"></i> Turnos Anteriores
                         </a>
-                        <a href="./cancelShiftView.html" class="w3-bar-item w3-button">
+                        <a href="./cancelShiftView.html" class="w3-bar-item w3-button-active w3-teall">
                             <i class="fa fa-calendar-times-o fa-fw w3-margin-right"></i> Cancelar Turno
                         </a>
                     </div>
@@ -134,7 +136,7 @@
             <!-- Right Column -->
             <div class="w3-twothird">
                 <div class="w3-container w3-text-black w3-card w3-margin-bottom right-container">
-                    <h2 class="w3-text-black w3-padding-16 w3-margin-16"><i class="fa fa-calendar-times-o" aria-hidden="true" style="font-size: 35px;"></i>
+                    <h2 class="w3-text-black w3-padding-16 margen-loco w3-margin-16"><i class="fa fa-calendar-times-o icono-loco" aria-hidden="true" style="font-size: 36px;"></i>
                         Cancelar Turnos</h2>
 
                     <!-- Tabla de próximos turnos -->
@@ -213,31 +215,33 @@
         </div>
     </div>
     <!-- Modal de confirmación -->
+    <!-- Modal Cancelar -->
     <div id="modalCancelar" class="w3-modal" style="display:none;">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity w3-round-large">
             <!-- Encabezado del Modal -->
             <header class="w3-container" style="background-color: #D32F2F; color: white;">
-            <span onclick="cerrarModal('modalCancelar')"
-                  class="w3-button w3-display-topright"
-                  style="color: white; font-weight: bold;">&times;</span>
+      <span onclick="cerrarModal('modalCancelar')"
+            class="w3-button w3-display-topright"
+            style="color: white; font-weight: bold;">&times;</span>
                 <h2>¿Está seguro que quiere cancelar su turno?</h2>
             </header>
 
             <!-- Contenido del Modal -->
             <div class="w3-container" style="background-color: #FFCDD2; color: #B71C1C; text-align: center;">
-                <p>Si cancela este turno, no podrá recuperarlo.</p>
+                <p>Esta acción no se puede deshacer.</p>
             </div>
 
             <!-- Botones del Modal -->
-            <footer class="w3-container w3-center w3-padding" style="background-color: #F44336;">
+            <footer class="w3-container w3-center w3-padding" style="background-color: #E53935;">
                 <button class="w3-button w3-red w3-round-large"
-                        onclick="confirmarCancelarTurno()"
-                        style="margin-right: 10px;">Sí, cancelar</button>
-                <button class="w3-button w3-gray w3-round-large"
-                        onclick="cerrarModal('modalCancelar')">No</button>
+                        onclick="cerrarModal('modalCancelar')">Volver atrás</button>
+                <button class="w3-button w3-round-large"
+                        style="background-color: red; color: white;"
+                        onclick="confirmarCancelarTurno()">Sí, cancelar turno</button>
             </footer>
         </div>
     </div>
+
 
     <script>// Mostrar el modal
     function mostrarModal(idModal) {

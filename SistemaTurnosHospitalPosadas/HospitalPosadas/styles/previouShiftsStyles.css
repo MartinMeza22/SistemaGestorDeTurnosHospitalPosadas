@@ -1,53 +1,86 @@
-.footer-corregido{
-    margin-top: 1.3em;
-}
-@media (max-width: 768px) {
-    /* Ocultar el contenedor de usuario */
-    .user-info {
-        display: none; /* Oculta el contenedor en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    /* Ocultar todo el contenido de la izquierda */
+    .w3-third {
+        display: none;
     }
 
-    /* Estilos para la tabla */
-    table {
-        width: 100%; /* Asegura que la tabla ocupe el 100% del ancho */
-        border-collapse: collapse; /* Colapsa los bordes */
+    /* Mostrar solo la sección de turnos anteriores */
+    .right-container {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
     }
 
-    thead, tbody, th, td, tr {
-        display: block; /* Cambia a bloque para apilar elementos */
+    .turnos-table th, .turnos-table td {
+        font-size: 12px;
+        padding: 8px;
     }
 
-    thead tr {
-        position: absolute; /* Oculta el encabezado en pantallas pequeñas */
-        top: -9999px;
-        left: -9999px;
+    .turnos-table {
+        font-size: 14px;
     }
 
-    tr {
-        margin-bottom: 15px; /* Espacio entre filas */
+    /* Botón de volver atrás */
+    .back-button {
+        display: block;
+        margin: 10px;
+        font-size: 16px;
+        color: #154564;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        background-color: #fff;
+        border: 1px solid #154564;
+        cursor: pointer;
     }
 
-    td {
-        text-align: right; /* Alinea el texto a la derecha */
-        position: relative;
-        padding-left: 50%; /* Espacio para el contenido */
-        border: 1px solid #ccc; /* Añade borde a las celdas */
+    .back-button:hover {
+        background-color: #154564;
+        color: white;
     }
 
-    td::before {
-        content: attr(data-label); /* Muestra el nombre de la columna */
-        position: absolute;
-        left: 10px;
-        width: calc(50% - 20px);
-        padding-right: 10px;
-        white-space: nowrap; /* Evita el salto de línea */
-        text-align: left; /* Alinea el texto a la izquierda */
+    /* Modificar la tabla para que se ajuste a pantallas pequeñas */
+    .turnos-table th, .turnos-table td {
+        padding: 10px;
+        font-size: 12px;
     }
 
-    /* Asegura que el iframe del mapa sea responsivo */
+    /* Ajustar el contenido de la tabla */
+    .news-card {
+        margin: 10px 0;
+    }
+
+    /* Ajustes en el footer */
+    .footer-left, .footer-map, .footer-copyright {
+        text-align: center;
+    }
+
     iframe {
-        width: 100%; /* Asegura que el mapa ocupe el ancho completo */
-        height: 200px; /* Altura fija para el mapa */
-        border: none; /* Sin borde */
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* Para pantallas más grandes, mantener el estilo original */
+@media screen and (min-width: 1024px) {
+    .w3-bar-item.w3-left {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .w3-twothird {
+        width: 66.6%;
+    }
+
+    .w3-third {
+        width: 33.3%;
+    }
+
+    .turnos-table th, .turnos-table td {
+        padding: 12px;
+    }
+
+    .news-card {
+        padding: 15px;
     }
 }

@@ -29,8 +29,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <nav class="w3-bar w3-card-4">
     <!-- Left side: Logo and text -->
     <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
-      <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-      <span style="font-size: x-large">Hospital Nacional Profesor Alejandro Posadas</span>
+        <a href="./main.html" style="text-decoration: none; color: inherit;">
+        <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <a href="./main.html" style="text-decoration: none; color: inherit;">
+            <span id="hospital-name">Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
 
     <!-- Right side: Registrarse -->
@@ -62,7 +64,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
 <!-- Header with full-height image -->
-<header class=" w3-display-container w3-grayscale-min" id="home" >
+<header class=" w3-display-container w3-grayscale-min homme" id="home" >
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
         <!-- The Grid -->
@@ -87,6 +89,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               </div>
             </div><br>
               <a href="javascript:history.back()" class="back-button">Volver Atrás</a>
+              <div class="news-card">
+                  <h3>Noticia 1</h3>
+                  <p>La herida que nunca cerró: Huracán y la polémica definición con Vélez del Clausura 2009</p>
+                  <a href="#">Leer más</a>
+              </div>
           </div>
 
           <!-- Right Column -->
@@ -99,25 +106,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <div class="w3-container w3-teal w3-round-large" style="width:100%">3 de 3 pasos</div>
             </div>
 
-            <div class="w3-container boton w3-display-container">
+            <div class="w3-container boton w3-display-container cont-loco">
                 <h3>Turno Seleccionado</h3>
                 <p><strong>Especialista:</strong> Dr. Juan Pérez</p>
                 <p><strong>Especialidad:</strong> Cardiología</p>
                 <p><strong>Fecha:</strong> 15 de diciembre de 2024</p>
                 <p><strong>Hora:</strong> 10:30 AM</p>
-                <p><strong>Consultorio:</strong> N° 305</p>
+                <p class="tuk-p"><strong>Consultorio:</strong> N° 305</p>
 
                 <br>
                 <!-- BOTON PANTALLA GRANDE -->
-            <div class="button-container w3-display-bottommiddle w3-hide-small w3-hide-medium">
-              <button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalVolver')">Volver Atrás</button>
-            
-              <button class="w3-button botonConfirmar w3-teal w3-round-large" onclick="mostrarModal('modalConfirmar')">Confirmar Turno</button>
+            <div class="button-container w3-display-bottommiddle w3-hide-small w3-hide-medium boton-cont">
+              <button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalVolver')">Volver al Inicio </button>
+
+              <button class="w3-button botonConfirmar w3-round-large" style="background: #0d3450; color: white" onclick="mostrarModal('modalConfirmar')">Confirmar Turno</button>
             </div>
                 <!-- BOTON PANTALLA CHICA yt mediana -->
-                <div class="button-container w3-show-small w3-show-medium w3-hide-large">
-                    <button class="w3-button w3-teal w3-round-large" onclick="mostrarModal('modalConfirmar')">Confirmar Turno</button>
-                    <button class="w3-button  w3-round-large" onclick="mostrarModal('modalVolver')">Volver Atrás</button>
+                <div class="button-container w3-show-small w3-show-medium w3-hide-large otro-cont">
+                    <button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalVolver')">Volver Atrás</button>
+                    <button class="w3-button w3-round-large" style="background: #0d3450; color: white" onclick="mostrarModal('modalConfirmar')">Confirmar Turno</button>
                 </div>
             </div>
             <br>
@@ -128,6 +135,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
     <div id="modalVolver" class="w3-modal" style="display:none;">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity w3-round-large">
+            <!-- Header del Modal -->
             <header class="w3-container" style="background-color: #D32F2F; color: white;">
             <span onclick="cerrarModal('modalVolver')"
                   class="w3-button w3-display-topright"
@@ -135,67 +143,61 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <h2>¿Deseas volver hacia atrás?</h2>
             </header>
 
-            <div class="w3-container" style="background-color: #FFCDD2; color: #B71C1C;">
+            <!-- Contenido del Modal -->
+            <div class="w3-container" style="background-color: #FFCDD2; color: #B71C1C; text-align: center;">
                 <p>Perderás los cambios realizados. ¿Estás seguro de que deseas continuar?</p>
             </div>
 
+            <!-- Footer del Modal -->
+            <footer class="w3-container w3-center w3-padding" style="background-color: #E53935;">
+                <!-- Botón de Cancelar -->
+                <button class="w3-button w3-red w3-round-large"
+                        onclick="cerrarModal('modalVolver')">Cancelar</button>
 
-            <footer class="w3-container w3-center w3-padding" style="background-color: #F44336;">
-                <button class="w3-button"
-                        style="background-color: #FFEBEE; color: #B71C1C; border: 2px solid #D32F2F; border-radius: 12px;"
-                        onclick="cerrarModal('modalVolver')">
-                    Cancelar
-                </button>
-                <button class="w3-button" style="background-color: #C62828; color: white; border-radius: 12px">
-                        <a href="./reserveShiftView.html">Sí, Volver</a>
+                <!-- Botón de Confirmar -->
+                <button class="w3-button w3-round-large" style="background: red">
+                    <a href="./selectEspecialistView.html" style="color: white; text-decoration: none;">Sí, Volver</a>
                 </button>
             </footer>
         </div>
     </div>
 
 
-<!-- Modal Confirmar Turno -->
-<div id="modalConfirmar" class="w3-modal" style="display:none;">
-<div class="w3-modal-content w3-card-4 w3-animate-opacity w3-round-large">
-    <header class="w3-container w3-teal">
-        <span onclick="cerrarModal('modalConfirmar')" class="w3-button w3-display-topright">&times;</span>
-        <h2>Turno Confirmado</h2>
-    </header>
-    <div class="w3-container boton w3-display-container">
-        <p><strong>Paciente:</strong> Juan Pérez</p>
-        <p><strong>Documento:</strong> DNI 12345678</p>
-        <p><strong>Especialidad:</strong> Medicina General</p>
-        <p><strong>Especialista:</strong> Dr. Carlos García</p>
-        <p><strong>Fecha y Hora:</strong> Lunes, 6 de Enero 2025, 11:50 AM</p>
-     <br>
 
-        <!-- BOTON PANTALLA GRANDE -->
-        <div class="button-container w3-display-bottommiddle w3-hide-small w3-hide-medium">
-            <a href="reserveShiftView.html"> <button class="w3-button w3-teal w3-round-large">Reservar otro turno</button></a>
-            <a href="./main.html"><button class="w3-button w3-red w3-round-large" onclick="mostrarModal('modalSalir')">Volver al Inicio</button></a>
-    </div>
+    <!-- Modal Confirmar Turno -->
+    <div id="modalConfirmar" class="w3-modal" style="display:none;">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity w3-round-large">
+            <!-- Header del Modal -->
+            <header class="w3-container" style="background-color: #388E3C; color: white;">
+                <span onclick="cerrarModal('modalConfirmar')" class="w3-button w3-display-topright" style="color: white;">&times;</span>
+                <h2>Turno Confirmado</h2>
+            </header>
 
-  <!-- BOTON PANTALLA CHICA yt mediana -->
-  <div class="button-container w3-show-small w3-show-medium w3-hide-large">
-       <a href="./reserveShiftView.html"> <button class="w3-button w3-teal w3-round-large">Reservar otro turno</button></a>
-       <a href="./main.html"> <button class="w3-button w3-red w3-round-large">Volver al Inicio</button></a>
-    </div>
-
-
-
-
-
-</div>
-    <br>
-
+            <!-- Contenido del Modal -->
+            <div class="w3-container" style="background-color: #C8E6C9; color: #2E7D32;">
+                <p><strong>Paciente:</strong> Juan Pérez</p>
+                <p><strong>Documento:</strong> DNI 12345678</p>
+                <p><strong>Especialidad:</strong> Medicina General</p>
+                <p><strong>Especialista:</strong> Dr. Carlos García</p>
+                <p><strong>Fecha y Hora:</strong> Lunes, 6 de Enero 2025, 11:50 AM</p>
             </div>
-          </div>
 
-          <!-- End Grid -->
+            <!-- Footer del Modal -->
+            <footer class="w3-container w3-center w3-padding" style="background-color: #4CAF50;">
+                <a href="./main.html">
+                    <button class="w3-button" style="background-color: #388E3C; color: white; border-radius: 12px;">
+                        Volver al Inicio
+                    </button>
+
+                </a>
+                <a href="./reserveShiftView.html">
+                    <button class="w3-button" style="background-color: green; color: white; border-radius: 12px;">
+                        Reservar otro turno
+                    </button>
+                </a>
+            </footer>
         </div>
-
-        <!-- End Page Container -->
-      </div>
+    </div>
 </header>
 
 <footer>

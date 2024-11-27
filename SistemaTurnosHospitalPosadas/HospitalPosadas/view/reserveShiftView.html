@@ -9,10 +9,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="../styles/navStyle.css">
-  <link rel="stylesheet" href="../styles/responsiveReserveShiftStyle.css">
   <link rel="stylesheet" href="../styles/buttonBackStyle.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/reservarFacundo.css">
+
   <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -20,6 +19,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   padding: 16px;
 }
 </style>
+  <link rel="stylesheet" href="../styles/reservarFacundo.css">
+  <link rel="stylesheet" href="../styles/responsiveReserveShiftStyle.css">
 </head>
 
 <body>
@@ -28,8 +29,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <nav class="w3-bar w3-card-4">
     <!-- Left side: Logo and text -->
     <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+      <a href="./main.html" style="text-decoration: none; color: inherit;">
       <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-      <span style="font-size: x-large" >Hospital Nacional Profesor Alejandro Posadas</span>
+      <a href="./main.html" style="text-decoration: none; color: inherit;">
+      <span id="hospital-name">Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
 
     <!-- Right side: Registrarse -->
@@ -44,14 +47,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Nadal, Franco Quispe</a>
-<a href="./reserveShiftView.html" onclick="w3_close()" class="w3-bar-item w3-button">RESERVAR TURNO</a>
-<a href="nextsShiftsView.html" onclick="w3_close()" class="w3-bar-item w3-button">PRÓXIMOS TURNOS</a>
-<a href="./turnosAterioresFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS ANTERIORES</a>
-<a href="../../PRUEBA_FACUNDO/indexFacundo.html" onclick="w3_close()" class="w3-bar-item w3-button">CERRAR SESIÓN</a>
-</nav>
 
   </nav>
 <!-- Header with full-height image -->
@@ -80,8 +75,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
               </div>
 
             </div><br>
-            <a href="javascript:history.back()" class="back-button">Volver Atrás</a>
 
+            <a href="javascript:history.back()" class="back-button">Volver Atrás</a>
+            <div class="news-card">
+              <h3>Noticia 1</h3>
+              <p>La herida que nunca cerró: Huracán y la polémica definición con Vélez del Clausura 2009</p>
+              <a href="#">Leer más</a>
+            </div>
           </div>
 
           <!-- Right Column -->
@@ -162,7 +162,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </div>
 
                  <!-- Botón de reservar turno PANTALLA CHICA -->
-                 <div class="w3-hide-large w3-hide-medium" style="display: flex; justify-content: center;" >
+                 <div class="w3-hide-large boton-responsivo w3-hide-medium" style="display: flex; justify-content: center;" >
                     <button type="submit" class="w3-button  w3-margin" style="background-color: #154564;  border-radius: 10px;  color: white;">Reservar Turno</button>
                   </div>
 

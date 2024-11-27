@@ -68,10 +68,12 @@
 <body>
 
 <!-- Nav Bar -->
-<nav class="w3-bar w3-card-4">
+<nav class="w3-bar nav-loco w3-card-4">
     <!-- Left side: Logo and text -->
     <div class="w3-bar-item w3-left navLetrasBlancas w3-hover-none" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+        <a href="./main.html" style="text-decoration: none; color: inherit;">
         <img src="../images/logo_posadas.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <a href="./main.html" style="text-decoration: none; color: inherit;">
         <span style="font-size: x-large" >Hospital Nacional Profesor Alejandro Posadas</span>
     </div>
 
@@ -127,13 +129,18 @@
                     </div>
                 </div><br>
                 <a href="javascript:history.back()" class="back-button">Volver Atrás</a>
+                <div class="news-card">
+                    <h3>Noticia 1</h3>
+                    <p>La herida que nunca cerró: Huracán y la polémica definición con Vélez del Clausura 2009</p>
+                    <a href="#">Leer más</a>
+                </div>
             </div>
 
             <!-- Right Column -->
             <div class="w3-twothird">
                 <div class="w3-container w3-heightt w3-text-black w3-card w3-margin-bottom right-container">
                     <h2 class="w3-text-black w3-padding-16">
-                        <i class="fa fa-history fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>
+                        <i class="fa fa-history fa-fw w3-xxlarge w3-text-black" id="iconn"></i>
                         Turnos Anteriores
                     </h2>
 
@@ -191,7 +198,7 @@
     </div>
 </header>
 
-<footer class="footer-corregido">
+<footer>
     <!-- Texto e íconos -->
     <div class="footer-left">
         <h2 id="h2-footer">¿CÓMO LLEGAR?</h2>

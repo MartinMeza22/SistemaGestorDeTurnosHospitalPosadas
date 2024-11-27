@@ -1,5 +1,5 @@
 .content{
-        background-image: url(../images/secretaria-medica-hospital-pasillo-clinica-sala-espera-recepcion-pasillo-vacio-asiento-paciente-visitante_1030874-13032.avif);
+        background-image: url(../images/salaaa.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -12,4 +12,55 @@
 .content img{
     width: 100%;
     background-repeat: no-repeat;
+}
+
+/* Diseño responsive */
+@media screen and (min-width: 600px) {
+    footer {
+        flex-direction: row; /* Deja de ser columna y se organiza en fila */
+        justify-content: space-between;
+    }
+
+    .footer-left {
+        flex: 1;
+        margin-right: 20px; /* Espaciado entre las columnas */
+    }
+
+    .footer-map {
+        flex: 1;
+    }
+
+    .footer-copyright {
+        text-align: left;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #hospital-name{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    footer {
+        flex-direction: column; /* Mantiene las columnas en móvil */
+
+    }
+
+    .footer-left,
+    .footer-map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+    #hospital-name{
+        font-size: 1.41em;
+    }
+}
+
+.nav-loco{
+    padding: 0 1.09em;
 }

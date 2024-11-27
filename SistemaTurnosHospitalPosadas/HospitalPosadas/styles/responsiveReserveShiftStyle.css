@@ -3,25 +3,213 @@
 .column-container {
     padding: 0 10px;
 }
+#hospital-name{
+    font-size: x-large
+}
+@media screen and (max-width: 600px) {
+    #hospital-name {
+        font-size: 1.51em;
+    }
+    .homme{
+        margin-bottom: 0em;
+    }
+}
 
-/* Responsivo: Móviles */
-@media (max-width: 768px) {
-    .w3-third, .w3-twothird {
-        width: 100%;
-        display: block;
+/* Estilos generales para dispositivos móviles */
+@media screen and (max-width: 600px) {
+
+    /* Hacer que la imagen del logo en la barra de navegación sea más pequeña */
+    .w3-bar-item img {
+        height: 30px;
     }
 
-    .w3-half {
-        width: 100%;
-        display: block;
+    /* Cambiar el tamaño del texto en la barra de navegación */
+    .w3-bar-item span {
+        font-size: 14px;
     }
 
-    .left-container {
+    /* Asegurar que la barra de navegación se vea correcta en pantallas pequeñas */
+    .w3-bar {
+        padding: 8px;
+    }
+
+    /* Eliminar el icono de usuario en pantallas pequeñas */
+    .w3-btn.w3-hide-small {
+        display: none;
+    }
+
+    /* Cambiar la disposición del contenido principal */
+    .w3-third {
+        width: 100% !important;
+        padding: 5px;
+    }
+
+    /* Ajustar el contenedor derecho para ocupar el 100% */
+    .w3-twothird {
+        width: 100% !important;
+        padding: 5px;
+    }
+
+    /* Hacer que los botones sean más grandes en pantallas pequeñas */
+    .w3-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    /* Asegurar que el botón "Reservar Turno" esté centrado en pantallas pequeñas */
+    .boton-responsivo {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /* Reducir el tamaño del iframe del mapa para que ocupe menos espacio */
+    .footer-map iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Asegurar que las noticias en el pie de página sean más legibles */
+    .footer-left {
+        text-align: center;
         margin-bottom: 20px;
     }
 
-    .w3-button {
-        width: 100%; /* Botones ocupan el ancho completo */
+    /* El pie de página debe estar centrado */
+    .footer-copyright {
         text-align: center;
+        padding: 10px;
+    }
+
+    /* Ajustar la visualización del título en el pie de página */
+    #h2-footer {
+        font-size: 18px;
+    }
+
+    /* Hacer la barra lateral en la parte superior para móviles */
+    .w3-bar-item.w3-hide-large {
+        display: block;
+    }
+
+    /* Colocar los íconos de la barra lateral en una sola columna */
+    .w3-bar-block a {
+        font-size: 14px;
+    }
+
+    /* Asegurar que las noticias se vean correctamente en pantallas pequeñas */
+    .news-card {
+        margin: 10px;
+    }
+
+    /* Asegurar que el título del formulario sea legible en pantallas pequeñas */
+    .w3-xxlarge {
+        font-size: 24px;
+    }
+    .homme{
+        margin-bottom: 0em;
     }
 }
+
+/* Estilos para dispositivos medianos (tabletas) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Hacer que la barra de navegación se ajuste mejor */
+    .w3-bar {
+        padding: 10px;
+    }
+
+    /* Ajustar el tamaño de los botones */
+    .w3-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Cambiar la disposición de las columnas a dos */
+    .w3-third {
+        width: 50% !important;
+    }
+
+    /* Hacer que los formularios se adapten mejor en tabletas */
+    .w3-half {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Asegurar que los botones de reservar turno se vean apropiados */
+    .w3-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    /* Mejorar la disposición del pie de página */
+    .footer-left, .footer-map {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Cambiar el tamaño del iframe en el pie de página */
+    .footer-map iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Ajustar la visualización de las noticias */
+    .news-card {
+        margin: 15px;
+    }
+
+    /* Asegurar que los títulos en el pie de página sean legibles */
+    #h2-footer {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1025px) {
+    .w3-bar {
+        padding: 16px;
+    }
+
+    .w3-bar-item span {
+        font-size: 18px;
+    }
+
+    .w3-third {
+        width: 33% !important;
+    }
+
+    .w3-twothird {
+        width: 67% !important;
+    }
+
+}
+
+
+@media screen and (max-width: 599px) {
+    footer {
+        flex-direction: column; /* Mantiene las columnas en móvil */
+    }
+
+    .footer-left,
+    .footer-map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer h2 {
+        text-align: center; /* Centra el h2 en móviles */
+        width: 100%; /* Hace que el h2 ocupe el ancho completo */
+        margin-bottom: 20px; /* Aumenta el espaciado inferior */
+    }
+}
+
